@@ -1,32 +1,12 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
-import Button from "../../components/Button";
-import UserService from "../../services/UserService";
-import { useNavigate } from "react-router-dom"; 
-
-const userService = new UserService();
+import Header from "../../components/header";
 
 const Profile = () => {
-  const navigate = useNavigate();
-
-  const logout = () => {
-    userService.logout();
-    const userAuthenticated = userService.userAuthenticated();
-    if (!userAuthenticated) {
-      navigate("/Login");
-    }
-  }
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <Button 
-          type="button"
-          onClick={logout}
-          disabled={false}
-          text="Logout"
-        />
-      </header>
+      <Header/>
       <div className={styles.containerProfile}>
         <div className={styles.containerInfo}>
           <div className={styles.containerImageProfile}>

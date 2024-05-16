@@ -1,13 +1,9 @@
 .button{
     background: #02274F;
-    width: 385.88px;
-    height: 54px;
-    top: 439.88px;
-    left: 25.88px;
-    padding: 14.63px 0px 15.75px 0px;
-    gap: 0px;
+    /* width: 385.88px;
+    height: 54px; */
+    padding: 14px;
     border-radius: 9px;
-    opacity: 0px;
     cursor: pointer;
     color: #fff;
 }

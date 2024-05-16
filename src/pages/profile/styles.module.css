@@ -5,15 +5,6 @@
     color: #fff;
 }
 
-.header{
-    height: 60px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding: 0.5rem 2rem;
-}
-
 .container{
     background: #F1F5F9;
     height: 100vh;
