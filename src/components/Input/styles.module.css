@@ -1,9 +1,19 @@
 .input{
-    background-color: #F1F1F1;
+    background-color: var(--color-darkgray);
     width: 385.88px;
     height: 54.25px;
     padding: 18px 18px 20.25px 18px;
     gap: 13.5px;
     border-radius: 9px;
     opacity: 0px;
+}
+
+.required{
+    color: #F00;
+}
+
+.errorStyled{
+    color: red;
+    font-size: 14px;  
+    margin-top: 0.5rem;
 }

@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-white: #fff;
+  --color-gray: #F1F5F9;
+  --color-darkgray: #F1F1F1;
+  --color-darkblue: #02274F;
+  --color-bgwhite: #fff;
+  --color-bggrayinicial: #FAFAFA;
+  --color-black: #000;
+}
+
+.high-contrast-mode {
+    --color-gray: var(--color-black);
+    --color-darkgray: var(--color-black);
+    --color-bgwhite: var(--color-black);
+    --color-bggrayinicial: var(--color-black);
+}
+
+body.high-contrast-mode{
+    color: var(--color-white);
+}
+
+body.high-contrast-mode header{
+    background: var(--color-black);
+}
+
+body.high-contrast-mode input{
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+body.high-contrast-mode button{
+    background: none;
+    border: solid 2px var(--color-white);
+}
+
+body.high-contrast-mode form{
+    border: 2px solid var(--color-white);
+}

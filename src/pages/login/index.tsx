@@ -4,7 +4,8 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { validationEmail, validationPassword } from "../../utils/validation";
 import UserService from "../../services/UserService";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
+import useHighContrast from "../../hooks/highContrast";
 
 const userService = new UserService();
 
@@ -13,6 +14,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const [highContrast, togglehighContrastMode] = useHighContrast();
 
   useEffect(() => {
     const userAuthenticated = userService.userAuthenticated();
@@ -43,9 +45,9 @@ const Login = () => {
         password: password,
       });
       if (response === true) {
-        alert('usuário Logado com Sucesso')
-        navigate('/profile')
-      }else {
+        alert("usuário Logado com Sucesso");
+        navigate("/profile");
+      } else {
         alert("Login failed");
       }
       setLoading(false);
@@ -59,16 +61,20 @@ const Login = () => {
 
   return (
     <div className={styles.containerLogin}>
-      <div className={styles.containerFormLogin}>
-        <div>
-          <img
-            src="/logo_azul.svg"
-            alt="Logo da empresa b2bit"
-            className={styles.imgFormLogin}
-          />
-        </div>
-        <div>
+      <header className={styles.header}>
+      <button onClick={() => togglehighContrastMode()} className={styles.buttonHighContrast}><i className="fas fa-adjust"></i></button>
+      </header>
+
+      <div className={styles.container}>
           <form onSubmit={handleSubmit} className={styles.containerForm}>
+            <div>
+              <img
+                src={`${!highContrast ? "/logo_azul.svg": "/logo_branco.svg"}`}
+                alt="Logo da empresa b2bit"
+                className={styles.imgFormLogin}
+              />
+            </div>
+
             <div>
               <label htmlFor="email">E-mail</label>
               <Input
@@ -96,7 +102,6 @@ const Login = () => {
               text="Entrar"
             />
           </form>
-        </div>
       </div>
     </div>
   );

@@ -3,10 +3,13 @@ import styles from "./styles.module.css";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import UserService from "../../services/UserService";
+import useHighContrast from "../../hooks/highContrast"; 
 
 const userService = new UserService();
 
 const Header = () => {
+  const [highContrast, togglehighContrastMode] = useHighContrast();
+
   const navigate = useNavigate();
 
   const logout = () => {
@@ -19,6 +22,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
+      <button onClick={() => togglehighContrastMode()} className={styles.buttonHighContrast}><i className="fas fa-adjust"></i></button>
       <Button type="button" onClick={logout} disabled={false} text="Logout" />
     </header>
   );

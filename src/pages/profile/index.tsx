@@ -37,7 +37,6 @@ const Profile = () => {
     <div className={styles.container}>
       <Header />
       <div className={styles.containerProfile}>
-        <div className={styles.containerInfo}>
           {error ? (
             <Result
               status="error"
@@ -48,50 +47,45 @@ const Profile = () => {
                   Recarregar
                 </Button>,
               ]}
-            >
-            </Result>
+            ></Result>
           ) : (
             <>
-              <div className={styles.containerImageProfile}>
-                <div>
-                  <p>Profile Picture</p>
-                </div>
-                <div>
-                  <img src="/logo_azul.svg" alt="Foto do usuário logado" />
-                </div>
-              </div>
-
-              <div>
-                <form className={styles.containerForm}>
+              <form className={styles.containerForm}>
+                <div className={styles.containerImageProfile}>
                   <div>
-                    <label htmlFor="name">
-                      Your <b>Name</b>
-                    </label>
-                    <Input
-                      type="text"
-                      name="name"
-                      placeholder="Luiz Gustavo da Silva"
-                      value={name || ""}
-                      readOnly
-                    />
+                    <p>Profile Picture</p>
                   </div>
                   <div>
-                    <label htmlFor="email">
-                      Your <b>E-mail</b>
-                    </label>
-                    <Input
-                      type="email"
-                      name="email"
-                      placeholder="luiz@gmail.com"
-                      value={email || ""}
-                      readOnly
-                    />
+                    <img src="/logo_azul.svg" alt="Foto do usuário logado" />
                   </div>
-                </form>
-              </div>
+                </div>
+                <div>
+                  <label htmlFor="name">
+                    Your <b>Name</b>
+                  </label>
+                  <Input
+                    type="text"
+                    name="name"
+                    placeholder="Luiz Gustavo da Silva"
+                    value={name || ""}
+                    readOnly
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email">
+                    Your <b>E-mail</b>
+                  </label>
+                  <Input
+                    type="email"
+                    name="email"
+                    placeholder="luiz@gmail.com"
+                    value={email || ""}
+                    readOnly
+                  />
+                </div>
+              </form>
             </>
           )}
-        </div>
       </div>
     </div>
   );

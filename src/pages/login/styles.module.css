@@ -1,20 +1,22 @@
-.containerFormLogin{
+.container{
+    height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 438px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    padding: 3rem 0.5rem;
-    box-shadow: 0px 0px 64px 0px #00000040;
-    gap: 1rem;
 }
 
 .containerForm{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 438px;
+    background-color: var(--color-bgwhite);
+    border-radius: 10px;
+    padding: 3rem 0.5rem;
+    box-shadow: 0px 0px 64px 0px #00000040;
 }
 
 .containerForm div{
@@ -24,26 +26,28 @@
 }
 
 .containerLogin{
-    height: 100vh;
-    background-color: #FAFAFA;
+    background-color: var(--color-bggrayinicial);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.button{
-    background: #02274F;
-    width: 385.88px;
-    height: 54px;
-    top: 439.88px;
-    left: 25.88px;
-    padding: 14.63px 0px 15.75px 0px;
-    gap: 0px;
-    border-radius: 9px;
-    opacity: 0px;
-    color: #fff;
+.header{
+    height: 60px;
+    width: 100%;
+    padding: 1rem;
 }
 
 .imgFormLogin{
     width: 295px;
+}
+
+.container button{
+    width: 385.88px;
+    margin-top: 0.5rem;
+}
+
+.buttonHighContrast{
+    border: none !important;
 }
