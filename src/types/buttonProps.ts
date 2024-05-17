@@ -5,4 +5,5 @@ export interface ButtonProps {
     text: string;
     onClick: MouseEventHandler<HTMLButtonElement>;
     disabled: boolean;
+    arialLabel: string;
 }

@@ -7,4 +7,5 @@ export interface InputProps {
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
     type: string;
     readOnly?: boolean; 
+    id: string;
 }

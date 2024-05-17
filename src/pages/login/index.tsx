@@ -21,6 +21,8 @@ const Login = () => {
     const userAuthenticated = userService.userAuthenticated();
     if (userAuthenticated) {
       navigate("/profile");
+    }else {
+      document.getElementById("email")?.focus();
     }
   }, []);
 
@@ -80,7 +82,7 @@ const Login = () => {
           <div className="flex justify-center">
             <img
               src={`${!highContrast ? "/logo_azul.svg" : "/logo_branco.svg"}`}
-              alt="Logo da empresa b2bit"
+              alt="Foto do usuário ou logo da empresa b2bit"
               className={styles.imgLogo}
             />
           </div>
@@ -92,6 +94,7 @@ const Login = () => {
             <Input
               type="email"
               name="email"
+              id="email"
               placeholder="@gmail.com"
               value={email}
               onChange={handleEmailChange}
@@ -105,6 +108,7 @@ const Login = () => {
             <Input
               type="password"
               name="password"
+              id="password"
               value={password}
               placeholder="****************"
               onChange={handlePasswordChange}
@@ -115,6 +119,7 @@ const Login = () => {
             onClick={handleSubmit}
             disabled={loading || !validationInputs()}
             text="Sign In"
+            arialLabel="Botão de login"
           />
         </form>
       </div>

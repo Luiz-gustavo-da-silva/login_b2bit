@@ -70,6 +70,7 @@ const Profile = () => {
               <Input
                 type="text"
                 name="name"
+                id="name"
                 placeholder="Luiz Gustavo da Silva"
                 value={name || ""}
                 readOnly
@@ -82,6 +83,7 @@ const Profile = () => {
               <Input
                 type="email"
                 name="email"
+                id="email"
                 placeholder="luiz@gmail.com"
                 value={email || ""}
                 readOnly
