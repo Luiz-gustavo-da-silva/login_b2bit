@@ -102,7 +102,7 @@ const Login = () => {
               </div>
 
               <div className="flex flex-col gap-3">
-                <label htmlFor="email">E-mail <span className={styles.required}>*</span> </label>
+                <label htmlFor="email" className={styles.labelRequired}>E-mail</label>
                 <Field
                   as={Input}
                   type="email"
@@ -114,7 +114,7 @@ const Login = () => {
               </div>
 
               <div className="flex flex-col gap-3">
-                <label htmlFor="password">Password <span className={styles.required}>*</span> </label>
+                <label htmlFor="password" className={styles.labelRequired}>Password</label>
                 <Field
                   as={Input}
                   type="password"

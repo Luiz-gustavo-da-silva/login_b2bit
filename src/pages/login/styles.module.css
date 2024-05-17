@@ -37,7 +37,8 @@
   font-size: 0.8rem;
 }
 
-.required{
+.labelRequired::after{
+  content: " *";
   color: var(--color-red);
 }
 
