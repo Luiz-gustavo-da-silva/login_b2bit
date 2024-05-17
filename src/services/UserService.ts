@@ -15,7 +15,6 @@ export default class UserServices {
   }
 
   async login(dados: LoginForm) {
-    console.log(dados);
     try {
       const response = await this.axios.post("/", {email: dados.email, password: dados.password});
 

@@ -42,7 +42,6 @@ const Login = () => {
         email: email,
         password: password,
       });
-      console.log('response do Login', response)
       if (response === true) {
         alert('usuário Logado com Sucesso')
         navigate('/profile')

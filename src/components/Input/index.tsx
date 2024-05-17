@@ -7,10 +7,11 @@ const Input: React.FC<InputProps> = ({
     placeholder,
     value,
     onChange,
-    type
+    type, 
+    readOnly
 }) =>{
     return (
-        <input type={type} name={name} value={value} placeholder={placeholder} onChange={onChange} className={styles.input}/>
+        <input type={type} name={name} value={value} placeholder={placeholder} onChange={onChange} className={styles.input} readOnly={readOnly}/>
     );
 };
 
