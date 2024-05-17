@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={`flex items-center justify-between ${styles.header}`}>
       <button onClick={() => togglehighContrastMode()} className={styles.buttonHighContrast}><i className="fas fa-adjust"></i></button>
       <Button type="button" onClick={logout} disabled={false} text="Logout" />
     </header>

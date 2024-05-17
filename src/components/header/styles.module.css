@@ -1,13 +1,23 @@
-.header{
-    height: 60px;
-    background: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding: 0.5rem 2rem;
-    justify-content: space-between;
+.header {
+  height: 60px;
+  background: var(--color-white);
+  padding: 0.5rem 2rem;
 }
 
-.buttonHighContrast{
-    border: none !important;
+.buttonHighContrast {
+  border: none !important;
 }
+
+.header button:last-child {
+  width: 272px;
+  padding: 0.5rem 1rem;
+  border-radius: 6.33px;
+}
+
+@media (max-width: 768px) {
+  .header button:last-child {
+    width: auto;
+    border-radius: 6.33px;
+  }
+}
+    

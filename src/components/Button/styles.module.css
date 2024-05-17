@@ -1,11 +1,22 @@
-.button{
-    background: var(--color-darkblue);
-    padding: 14px;
-    border-radius: 9px;
-    cursor: pointer;
-    color: var(--color-white);
+.button {
+  background: var(--color-darkblue);
+  padding: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+  color: var(--color-white);
+  font-weight: 700;
 }
 
-.disabledButton{
-    opacity: 0.6;
+.button:hover {
+  opacity: 0.8;
+}
+
+.disabledButton {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 0.5rem;
+  }
 }
