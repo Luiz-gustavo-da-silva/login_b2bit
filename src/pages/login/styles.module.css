@@ -3,6 +3,7 @@
 }
 
 .header {
+  padding: 0.5rem 2rem;
   height: 60px;
 }
 
@@ -29,6 +30,15 @@
 .containerForm label {
   font-weight: 700;
   color: var(--color-label);
+}
+
+.error{
+  color: var(--color-red);
+  font-size: 0.8rem;
+}
+
+.required{
+  color: var(--color-red);
 }
 
 @media (max-width: 768px) {
