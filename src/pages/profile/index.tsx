@@ -11,6 +11,7 @@ const userDateService = new UserDateService();
 const Profile = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [urlImg, seturlImg] = useState("");
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -23,6 +24,7 @@ const Profile = () => {
       console.log(userProfile);
       setEmail(userProfile.email);
       setName(userProfile.name);
+      seturlImg(userProfile.avatar.high);
       setError(false);
     } catch (error) {
       setError(true);
@@ -58,7 +60,7 @@ const Profile = () => {
                 <p>Profile Picture</p>
               </div>
               <div className={`flex align-center justify-center ${styles.containerImageProfile}`}>
-                <img src="/logo_azul.svg" alt="Foto do usuário logado" />
+                <img src={urlImg ? urlImg : '/user.png'} alt="Foto do usuário logado" />
               </div>
             </div>
             <div className="flex flex-col gap-3">
