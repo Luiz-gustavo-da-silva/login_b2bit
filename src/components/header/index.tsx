@@ -8,7 +8,7 @@ import useHighContrast from "../../hooks/highContrast";
 const userService = new UserService();
 
 const Header = () => {
-  const [highContrast, togglehighContrastMode] = useHighContrast();
+  const [, togglehighContrastMode] = useHighContrast();
 
   const navigate = useNavigate();
 
