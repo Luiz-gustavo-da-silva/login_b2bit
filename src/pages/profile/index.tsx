@@ -21,7 +21,6 @@ const Profile = () => {
   async function fetchUserProfile() {
     try {
       const userProfile = await userDateService.getUserProfile();
-      console.log(userProfile);
       setEmail(userProfile.email);
       setName(userProfile.name);
       seturlImg(userProfile.avatar.high);
