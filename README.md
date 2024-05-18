@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# Desafio b2bit - Luiz Gustavo da Silva
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este desafio consiste em criar um sistema de autenticação e perfil de usuário em uma aplicação web usando React JS. O usuário deseja ter acesso a várias funcionalidades, incluindo login, persistência de sessão, feedback de erro, exibição de perfil e logout.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<a href="https://pt-br.reactjs.org/">🔗 Link do site</a>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Tecnologias utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- React router
+- Formik
+- Axios
+- Ant Design
+- Tailwind
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Como Rodar a aplicação
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Pré-requisitos
+
+Antes de começar, verifique se você possui os seguintes requisitos instalados em sua máquina:
+
+- Node.js: [Download & Instalação](https://nodejs.org/)
+- npm (gerenciador de pacotes do Node.js, geralmente instalado junto com o Node.js)
+
+#### Passos
+
+1. **Clone o repositório**
+
+    Clone este repositório para sua máquina local:
+
+    ```git clone https://github.com/seu-usuario/seu-repositorio.git```
+
+2. **Instale as dependências**
+
+    Navegue até o diretório da aplicação e instale as dependências utilizando npm:
+
+    ```cd nome-da-pasta-do-repositorio```
+
+    ```npm install```
+
+3. **Inicie a aplicação**
+
+    Após a instalação das dependências, inicie a aplicação com o seguinte comando:
+
+    ```npm run dev```
+
+4. **Visualize a aplicação**
+
+    Abra seu navegador e acesse o seguinte endereço:
+
+    http://localhost:3000
+
+
+### Módulo de acessibilidades
+
+![Texto Alternativo](/public/ac1.png)
+
+Sendo a acessibilidade um recurso extremamente importante, considerei a inclusão de todos os usuários ao desenvolver esta aplicação. A imagem acima é um teste automatizado realizado com a ferramenta Accessibility Insights, que avalia recursos de acessibilidade. Como demonstrado, não foram encontradas falhas que comprometam a inclusão de pessoas com deficiência. Os testes manuais também não apresentaram erros.
+
+Além disso, considerando também as necessidades das pessoas com baixa visão, implementei o recurso de alto contraste, que proporciona uma leitura mais acessível das informações (para ativá-lo, basta clicar no botão à esquerda da página).
