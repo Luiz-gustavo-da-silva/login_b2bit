@@ -3,7 +3,7 @@
 Este desafio consiste em criar um sistema de autenticação e perfil de usuário em uma aplicação web usando React JS. O usuário deseja ter acesso a várias funcionalidades, incluindo login, persistência de sessão, feedback de erro, exibição de perfil e logout.
 
 
-<a href="https://pt-br.reactjs.org/">🔗 Link do site</a>
+<a href="https://login-b2bit.vercel.app/">🔗 Link do site</a>
 
 
 ### Tecnologias utilizadas
