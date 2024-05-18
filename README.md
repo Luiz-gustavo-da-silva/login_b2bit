@@ -14,6 +14,15 @@ Este desafio consiste em criar um sistema de autenticação e perfil de usuário
 - Ant Design
 - Tailwind
 
+### Requisitos não funcionais
+
+✅ Typescript \
+✅ React JS \
+❎ Testes \
+✅ Tailwind \
+✅ Deploy
+
+
 ### Como Rodar a aplicação
 
 #### Pré-requisitos
