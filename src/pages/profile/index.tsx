@@ -5,6 +5,7 @@ import Input from "../../components/Input";
 import UserDateService from "../../services/UserDateService";
 import { Button, Result } from "antd";
 import Footer from "../../components/footer";
+import { ProfileData } from "../../types/profileData";
 
 const userDateService = new UserDateService();
 
@@ -20,7 +21,7 @@ const Profile = () => {
 
   async function fetchUserProfile() {
     try {
-      const userProfile = await userDateService.getUserProfile();
+      const userProfile: ProfileData = await userDateService.getUserProfile();
       setEmail(userProfile.email);
       setName(userProfile.name);
       seturlImg(userProfile.avatar.high);

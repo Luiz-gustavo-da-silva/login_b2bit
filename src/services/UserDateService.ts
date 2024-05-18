@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios, { AxiosError, AxiosInstance } from 'axios';
 
 export default class UserDateService {
-  axiosInstance: any;
+  axiosInstance: AxiosInstance;
 
   constructor() {
     this.axiosInstance = axios.create({
@@ -18,7 +18,7 @@ export default class UserDateService {
         config.headers.Authorization = `Bearer ${token}`;
       }
       return config;
-    }, (error: any) => {
+    }, (error: AxiosError) => {
       return Promise.reject(error);
     });
   }

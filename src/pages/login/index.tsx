@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
@@ -51,7 +51,7 @@ const Login = () => {
       .required("A senha é obrigatória"),
   });
 
-  const handleSubmit = async (values: LoginForm, { setSubmitting, resetForm }:any) => {
+  const handleSubmit = async (values: LoginForm, { setSubmitting, resetForm }: FormikHelpers<LoginForm>) => {
     try {
       const response = await userService.login(values);
       if (response === true) {

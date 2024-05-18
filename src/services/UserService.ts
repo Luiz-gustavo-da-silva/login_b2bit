@@ -1,8 +1,8 @@
-import axios from "axios";
+import axios, { AxiosInstance } from "axios";
 import { LoginForm } from "../types/loginForm";
 
 export default class UserServices {
-  axios: any;
+  axios: AxiosInstance;
 
   constructor() {
     this.axios = axios.create({
