@@ -51,3 +51,15 @@ body.high-contrast-mode button{
 body.high-contrast-mode form{
     border: 2px solid var(--color-white);
 }
+
+body.high-contrast-mode  .ant-result-title{
+    color: var(--color-white) !important;
+}
+
+body.high-contrast-mode  .ant-result-subtitle{
+    color: var(--color-white) !important;
+}
+
+body.high-contrast-mode .ant-btn-primary{
+    background: none !important;
+}

@@ -31,24 +31,24 @@ const Login = () => {
   const openNotificationWithIcon = (type: NotificationType) => {
     if (type === "success") {
       api[type]({
-        message: "Login feito com sucesso!",
-        description: "Seja Bem-vindo",
+        message: "Login successful!",
+        description: "Welcome!",
       });
     } else {
       api[type]({
-        message: "Erro no login",
-        description: "Seu login falhou. Por favor, tente de novo!",
+        message: "Login error",
+        description: "Your login failed. Please try again!",
       });
     }
   };
 
   const validationSchema = Yup.object({
     email: Yup.string()
-      .email("Email inválido")
-      .required("O email é obrigatório"),
+      .email("Invalid email")
+      .required("Email is required"),
     password: Yup.string()
-      .min(6, "A senha deve ter pelo menos 6 caracteres")
-      .required("A senha é obrigatória"),
+      .min(6, "Password must be at least 6 characters")
+      .required("Password is required"),
   });
 
   const handleSubmit = async (values: LoginForm, { setSubmitting, resetForm }: FormikHelpers<LoginForm>) => {
@@ -96,7 +96,7 @@ const Login = () => {
               <div className="flex justify-center">
                 <img
                   src={`${!highContrast ? "/logo_azul.svg" : "/logo_branco.svg"}`}
-                  alt="Logo da empresa b2bit"
+                  alt="B2bit company logo"
                   className={styles.imgLogo}
                 />
               </div>
@@ -128,7 +128,7 @@ const Login = () => {
                 type="submit"
                 disabled={isSubmitting}
                 text="Sign In"
-                arialLabel="Botão de login"
+                arialLabel="Login"
               />
             </Form>
           )}

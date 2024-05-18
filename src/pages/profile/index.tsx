@@ -43,11 +43,11 @@ const Profile = () => {
         {error ? (
           <Result
             status="error"
-            title="Erro ao carregar perfil"
-            subTitle="Por favor, clique no botão abaixo para enviar uma nova requisição."
+            title="Failed to Load Profile"
+            subTitle="Please click the button below to send a new request."
             extra={[
               <Button type="primary" key="console" onClick={reload}>
-                Recarregar
+                Reload
               </Button>,
             ]}
           ></Result>
@@ -60,7 +60,7 @@ const Profile = () => {
                 <p>Profile Picture</p>
               </div>
               <div className={`flex align-center justify-center ${styles.containerImageProfile}`}>
-                <img src={urlImg ? urlImg : '/user.png'} alt="Foto do usuário logado" />
+                <img src={urlImg ? urlImg : '/user.png'} alt="User image" />
               </div>
             </div>
             <div className="flex flex-col gap-3">
