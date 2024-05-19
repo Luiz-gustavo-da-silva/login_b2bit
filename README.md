@@ -8,7 +8,7 @@ Este desafio consiste em criar um sistema de autenticação e perfil de usuário
 
 ### Tecnologias utilizadas
 
-- React router
+- React Router
 - Formik
 - Axios
 - Ant Design
@@ -18,6 +18,7 @@ Este desafio consiste em criar um sistema de autenticação e perfil de usuário
 
 ✅ Typescript \
 ✅ React JS \
+✅ Interceptors \
 ❎ Testes \
 ✅ Tailwind \
 ✅ Deploy
@@ -38,7 +39,7 @@ Antes de começar, verifique se você possui os seguintes requisitos instalados 
 
     Clone este repositório para sua máquina local:
 
-    ```git clone https://github.com/seu-usuario/seu-repositorio.git```
+    ```git clone https://github.com/Luiz-gustavo-da-silva/login_b2bit.git```
 
 2. **Instale as dependências**
 
@@ -58,12 +59,14 @@ Antes de começar, verifique se você possui os seguintes requisitos instalados 
 
     Abra seu navegador e acesse o seguinte endereço:
 
-    http://localhost:3000
+    ```http://localhost:3000```
+
+    Pode ser que abra em outra porta, por tanto, veja no terminal o link.
 
 
 ### Módulo de acessibilidades
 
-![Texto Alternativo](/public/ac1.png)
+![Imagem da ferramenta de testes automáticos Accessibility Insights](/public/ac1.png)
 
 Sendo a acessibilidade um recurso extremamente importante, considerei a inclusão de todos os usuários ao desenvolver esta aplicação. A imagem acima é um teste automatizado realizado com a ferramenta Accessibility Insights, que avalia recursos de acessibilidade. Como demonstrado, não foram encontradas falhas que comprometam a inclusão de pessoas com deficiência. Os testes manuais também não apresentaram erros.
 
